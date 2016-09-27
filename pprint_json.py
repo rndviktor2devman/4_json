@@ -13,10 +13,10 @@ def pretty_print_json(data):
 
 
 if __name__ == '__main__':
-	input_str = sys.argv[1]
-	if input_str.lower().endswith('.json'):
-		data = load_data(sys.argv[1])
-		pretty_print_json(data)
+	input_parameter = sys.argv[1]
+	if input_parameter.lower().endswith('.json'):
+		json_data = load_data(input_parameter)
+		pretty_print_json(json_data)
 	else:
 		raise NameError('Wrong file type!')
     
